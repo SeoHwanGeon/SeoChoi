@@ -1,0 +1,19 @@
+CREATE TABLE USER(
+	userID varchar(20),
+	userPW varchar(20),
+	userGender varchar(20),
+	userBirth varchar(32),
+	userName varchar(20),
+	PRIMARY KEY (userID)
+	);
+
+CREATE TABLE BBS(
+	bbsID int,
+	bbsTitle varchar(50),
+	userID varchar(20),
+	bbsDate datetime,
+	bbsContent varchar(2048),
+	bbsAvailable int,
+	PRIMARY KEY (bbsID)
+	);
+
